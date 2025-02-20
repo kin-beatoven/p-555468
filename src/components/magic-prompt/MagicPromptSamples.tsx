@@ -1,12 +1,9 @@
-
 import React from "react";
-
 export const MagicPromptSamples = () => {
-  return (
-    <div className="flex w-full flex-col items-stretch font-normal mt-[50px] max-md:max-w-full max-md:mt-10 text-[rgba(255,255,255,0.9)]">
+  return <div className="flex w-full flex-col items-stretch font-normal mt-[50px] max-md:max-w-full max-md:mt-10 text-[rgba(255,255,255,0.9)]">
       <div className="w-full max-md:max-w-full">
         <h2 className="text-base">Magic Prompts</h2>
-        <p className="text-sm leading-none mt-[15px] max-md:max-w-full">
+        <p className="text-sm leading-none mt-[15px] max-md:max-w-full text-gray-400">
           Prompt ideas for your content to get you started. Select your content
           type and edit the sample prompt to fit your needs.
         </p>
@@ -25,6 +22,5 @@ export const MagicPromptSamples = () => {
           Game Design
         </button>
       </div>
-    </div>
-  );
+    </div>;
 };
