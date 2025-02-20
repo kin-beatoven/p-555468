@@ -1,8 +1,9 @@
+
 import React from "react";
 
 export const MagicPromptSamples = () => {
   return (
-    <div className="flex w-full flex-col items-stretch text-[#010101] font-normal mt-[50px] max-md:max-w-full max-md:mt-10">
+    <div className="flex w-full flex-col items-stretch font-normal mt-[50px] max-md:max-w-full max-md:mt-10 text-[rgba(255,255,255,0.9)]">
       <div className="w-full max-md:max-w-full">
         <h2 className="text-base">Magic Prompts</h2>
         <p className="text-sm leading-none mt-[15px] max-md:max-w-full">

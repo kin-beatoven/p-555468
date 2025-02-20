@@ -1,8 +1,9 @@
+
 import React from "react";
 
 export const MagicPromptFooter = () => {
   return (
-    <div className="justify-center items-center bg-[rgba(21,20,30,0.82)] flex gap-[15px] text-xs text-[#010101] font-medium text-center mr-[34px] p-1.5 rounded-[14px] max-md:mr-2.5">
+    <div className="justify-center items-center bg-[rgba(21,20,30,0.82)] flex gap-[15px] text-xs font-medium text-center mr-[34px] p-1.5 rounded-[14px] max-md:mr-2.5 text-[rgba(255,255,255,0.9)]">
       <button className="self-stretch flex items-center gap-1 justify-center my-auto rounded-lg">
         <img
           loading="lazy"

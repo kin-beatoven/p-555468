@@ -8,7 +8,7 @@ import { MagicPromptFooter } from "@/components/magic-prompt/MagicPromptFooter";
 
 const Index = () => {
   return (
-    <div className="bg-[#15141E] flex flex-col overflow-hidden items-stretch pb-[18px]">
+    <div className="bg-[#15141E] flex flex-col overflow-hidden items-stretch pb-[18px] text-[rgba(255,255,255,0.9)]">
       <div className="flex w-full flex-col items-stretch max-md:max-w-full">
         <MagicPromptHeader />
         <div className="z-10 mt-[-53px] mb-[-392px] max-md:max-w-full max-md:mb-2.5">

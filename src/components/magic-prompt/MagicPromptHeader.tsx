@@ -1,3 +1,4 @@
+
 import React from "react";
 
 export const MagicPromptHeader = () => {
@@ -11,7 +12,7 @@ export const MagicPromptHeader = () => {
           alt="Magic Prompt Logo"
         />
       </div>
-      <div className="self-stretch flex min-w-60 items-center gap-1 text-sm text-[#010101] font-medium leading-none justify-center w-[465px] my-auto pl-4 pr-3 py-3 rounded-lg max-md:max-w-full">
+      <div className="self-stretch flex min-w-60 items-center gap-1 text-sm font-medium leading-none justify-center w-[465px] my-auto pl-4 pr-3 py-3 rounded-lg max-md:max-w-full text-[rgba(255,255,255,0.9)]">
         <div className="self-stretch my-auto">Fizz Campaign v1</div>
         <img
           loading="lazy"
@@ -20,7 +21,7 @@ export const MagicPromptHeader = () => {
           alt="Campaign Icon"
         />
       </div>
-      <div className="self-stretch flex min-w-60 items-center gap-5 text-xs text-[#010101] font-normal whitespace-nowrap tracking-[0.12px] w-[444px] my-auto max-md:max-w-full">
+      <div className="self-stretch flex min-w-60 items-center gap-5 text-xs font-normal whitespace-nowrap tracking-[0.12px] w-[444px] my-auto max-md:max-w-full text-[rgba(255,255,255,0.9)]">
         <div className="self-stretch w-[22px] my-auto">
           <div className="bg-[rgba(178,42,132,1)] w-full h-[22px] px-0.5 rounded-[50%] flex items-center justify-center text-white">
             A
