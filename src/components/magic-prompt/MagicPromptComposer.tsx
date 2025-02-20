@@ -42,8 +42,8 @@ export const MagicPromptComposer = () => {
                     type="text"
                     value={inputs.background}
                     onChange={(e) => setInputs(prev => ({...prev, background: e.target.value}))}
-                    className="self-stretch w-[1ch] min-w-[60px] overflow-hidden whitespace-nowrap leading-loose my-auto px-[5px] py-0.5 border-[rgba(255,255,255,0.82)] border-b bg-transparent text-[rgba(255,255,255,0.5)] focus:outline-none"
-                    style={{ width: `${Math.max(inputs.background.length, 1)}ch` }}
+                    className="self-stretch min-w-[90px] overflow-hidden whitespace-nowrap leading-loose my-auto px-[5px] py-0.5 border-[rgba(255,255,255,0.82)] border-b bg-transparent text-white focus:outline-none"
+                    style={{ width: inputs.background ? `${Math.max(inputs.background.length + 2, 1)}ch` : 'auto' }}
                   />
                   {!inputs.background && (
                     <span className="absolute left-[5px] top-1/2 -translate-y-1/2 pointer-events-none text-[rgba(255,255,255,0.5)]">
