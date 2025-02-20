@@ -1,3 +1,4 @@
+
 import React from "react";
 
 export const MagicPromptComposer = () => {
@@ -36,7 +37,7 @@ export const MagicPromptComposer = () => {
           <div className="border border-[color:var(--White-38,rgba(255,255,255,0.38))] flex min-h-[100px] w-full gap-2.5 text-sm text-[#010101] font-normal mt-[15px] pb-10 rounded-[10px] border-solid max-md:max-w-full">
             <div className="min-w-60 w-full flex-1 shrink basis-[0%] max-md:max-w-full">
               <div className="items-center border-[color:var(--White-38,rgba(255,255,255,0.38))] flex w-full gap-1 flex-wrap px-5 py-[5px] rounded-[10px] border-0 border-solid max-md:max-w-full">
-                <span className="leading-loose self-stretch my-auto">
+                <span className="leading-loose self-stretch my-auto text-[rgba(255,255,255,0.9)]">
                   I need
                 </span>
                 <input
