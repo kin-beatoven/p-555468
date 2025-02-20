@@ -1,5 +1,15 @@
-import React from "react";
+
+import React, { useState } from "react";
+
 export const MagicPromptComposer = () => {
+  const [inputs, setInputs] = useState({
+    background: "",
+    tutorial: "",
+    pace: "",
+    duration: "",
+    style: ""
+  });
+
   return <div className="w-full max-md:max-w-full text-[rgba(255,255,255,0.9)]">
       <h2 className="self-stretch w-full gap-[15px] text-base font-normal leading-none max-md:max-w-full">
         Start Here
@@ -27,7 +37,20 @@ export const MagicPromptComposer = () => {
                 <span className="leading-loose self-stretch my-auto">
                   I need
                 </span>
-                <input type="text" defaultValue="background" className="self-stretch overflow-hidden whitespace-nowrap leading-loose my-auto px-[5px] py-0.5 border-[rgba(255,255,255,0.82)] border-b bg-transparent text-[rgba(255,255,255,0.9)]" />
+                <div className="relative inline-block">
+                  <input
+                    type="text"
+                    value={inputs.background}
+                    onChange={(e) => setInputs(prev => ({...prev, background: e.target.value}))}
+                    className="self-stretch w-[1ch] min-w-[60px] overflow-hidden whitespace-nowrap leading-loose my-auto px-[5px] py-0.5 border-[rgba(255,255,255,0.82)] border-b bg-transparent text-[rgba(255,255,255,0.5)] focus:outline-none"
+                    style={{ width: `${Math.max(inputs.background.length, 1)}ch` }}
+                  />
+                  {!inputs.background && (
+                    <span className="absolute left-[5px] top-1/2 -translate-y-1/2 pointer-events-none text-[rgba(255,255,255,0.5)]">
+                      background
+                    </span>
+                  )}
+                </div>
                 <span className="leading-loose self-stretch my-auto">
                   music for a
                 </span>
